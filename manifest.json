@@ -1,0 +1,28 @@
+{
+  "name": "Szólalj meg angolul",
+  "short_name": "learnENG",
+	"description": "Angol nyelvtanulás, szókártya web app.",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "./index.html",
+  "icons": [{
+    "src": "",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "",
+    "sizes": "196x196",
+    "type": "image/png"
+  }]
+}
