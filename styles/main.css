@@ -6,10 +6,49 @@
 	--main-color-medium: #8DA7BE;
 	--main-color-dark: #36413E;
 	--main-color-black: #000;
+	--main-shadows: -4px -4px 8px rgba(255, 255, 255, .07), 4px 4px 8px rgba(0, 0, 0, .15);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html, body {
 	width: 100%;
 	height: 100vh;
 	background: var(--background-color);
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 50px 1fr 50px;
+}
+
+header {
+	grid-area: 1/1/2/-1;
+	align-self: end;
+}
+
+.progressbar {
+	width: 100%;
+	height: 10px;
+	background-color: var(--main-color-dark);
+}
+
+.innerbar {
+	width: 50%;
+	height: 10px;
+	background-color: var(--main-color-border);
+}
+
+main {
+	grid-area: 2/1/3/-1;
+}
+
+footer {
+	grid-area: -1/-1/-2/-2;
 }
