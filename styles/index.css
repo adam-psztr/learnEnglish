@@ -21,12 +21,16 @@ main {
 	align-items: center;
 }
 
-.menuBtn:not(#menuSetBtn):hover {
+.menuBtn:not(#menuSetBtn):hover,
+.menuBtn:not(#menuSetBtn):focus,
+.menuBtn:not(#menuSetBtn):active {
 	background-color: var(--main-color-dark);
 	color: var(--main-color-medium);
 }
 
-#menuSetBtn:hover {
+#menuSetBtn:hover,
+#menuSetBtn:focus
+#menuSetBtn:active {
 	color: var(--main-color-border);
 }
 
@@ -61,7 +65,9 @@ main > a > span.symbol {
 	transition: all .3s ease-in-out;
 }
 
-main > a:hover > span.symbol {
+main > a:hover > span.symbol,
+main > a:focus > span.symbol,
+main > a:active > span.symbol {
 	margin-top: 0;
 	font-size: 3.5rem;
 }
@@ -78,6 +84,11 @@ main > a > p > span {
 	transition: transform .3s ease-in-out;
 }
 
-#menuVideoBtn:hover p > span {
+#menuVideoBtn:hover p > span,
+#menuVideoBtn:focus p > span,
+#menuVideoBtn:active p > span {
 	transform: rotate(90deg);
 }
+
+
+
