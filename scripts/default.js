@@ -5,13 +5,17 @@ function prevDef(event) {
 function locHref(href) {
 	setTimeout(()=>{
 		window.location.href = href;
-	},250);
+	},300);
 };
 
 function selectAnchorSetHref(selector, href) {
+	let clickedItem = false;
 	document.querySelector(selector).addEventListener('click', (e) => {
 		prevDef(e);
-		locHref(href);
+		if(!clickedItem){
+			locHref(href);
+			clickedItem = true;
+		};
 		}
 	);
 };

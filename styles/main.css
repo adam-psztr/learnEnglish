@@ -38,7 +38,6 @@ body {
 	display: grid;
 	grid-template-columns: minmax(3rem, auto) minmax(3rem, 960px) minmax(3rem, auto);
 	grid-template-rows: 50px 1fr 50px;
-	overflow: hidden;
 }
 
 header {
@@ -60,7 +59,6 @@ header {
 
 main {
 	grid-area: 2/2/3/-2;
-	overflow-y: scroll;
 }
 
 footer {
