@@ -1,8 +1,13 @@
+let videoElement = document.querySelector("main > video");
+
+let locHash = window.location.hash.split("");
+locHash.shift();
+let locHashNum = parseInt(locHash.join(""));
+
 selectAnchorSetHref('#menuHomeBtn', '../index.html');
 
-document.querySelector("main video").setAttribute("src", allVideos[1]);
+videoElement.setAttribute("src", allVideos[locHashNum]);
 
-
-document.querySelector("main > video").onloadeddata = () => {
-	document.querySelector("main > video").currentTime= 12;
+videoElement.onloadeddata = () => {
+	videoElement.currentTime= 12;
 };
