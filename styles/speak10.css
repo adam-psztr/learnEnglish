@@ -18,11 +18,6 @@ main {
 	grid-area: 10/4/11/5;
 }
 
-footer > #menuForwardBtn {
-	opacity: 1;
-	cursor: auto;
-}
-
 main > a.menuBtn > span {
 	font-size: 7rem;
 }

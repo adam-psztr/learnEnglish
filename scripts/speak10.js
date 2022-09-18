@@ -30,7 +30,9 @@ function addElement(i) {
 	let newPar = document.createElement("p");
 	newPar.innerHTML = (locHashNum * 100 + btnTextNum[i][0]) + " <span>-</span> " + (locHashNum != 5 ? (locHashNum * 100 + btnTextNum[i][1]) : (locHashNum * 100 -5 + btnTextNum[i][1]));
 	menuBtn[i].appendChild(newPar);
-	menuBtn[i].setAttribute("href", ("#" + (locHashNum * 100 + btnTextNum[i][0])));
+	let selector = '#no' + (1 + i);
+	let link = '../pages/speak1.html#' + (locHashNum * 100 + btnTextNum[i][0])
+	selectAnchorSetHref(selector, link)
 }
 
 for(let i = 0; i < btnTextNum.length; i++) {

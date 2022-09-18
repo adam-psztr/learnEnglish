@@ -1,0 +1,11 @@
+main {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+video {
+	justify-self: center;
+	align-self: center;
+	border-radius: 1rem;
+	width: 100%;
+}
