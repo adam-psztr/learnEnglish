@@ -1,0 +1,8 @@
+selectAnchorSetHref('#no1', '../pages/speak10.html#0')
+selectAnchorSetHref('#no2', '../pages/speak10.html#1')
+selectAnchorSetHref('#no3', '../pages/speak10.html#2')
+selectAnchorSetHref('#no4', '../pages/speak10.html#3')
+selectAnchorSetHref('#no5', '../pages/speak10.html#4')
+selectAnchorSetHref('#no6', '../pages/speak10.html#5')
+selectAnchorSetHref('#menuBackBtn', '../index.html')
+selectAnchorSetHref('#menuHomeBtn', '../index.html')

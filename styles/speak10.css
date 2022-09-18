@@ -1,0 +1,35 @@
+main {
+	grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+}
+
+#no7 {
+	grid-area: 8/2/9/3;
+}
+
+#no8 {
+	grid-area: 8/4/9/5;
+}
+
+#no9 {
+	grid-area: 10/2/11/3;
+}
+
+#no10 {
+	grid-area: 10/4/11/5;
+}
+
+footer > #menuForwardBtn {
+	opacity: 1;
+	cursor: auto;
+}
+
+main > a.menuBtn > span {
+	font-size: 7rem;
+}
+
+@media (max-width: 550px),
+(max-height: 550px) {
+	main > a.menuBtn > span {
+		font-size: 4rem;
+	}
+}
