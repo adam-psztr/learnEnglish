@@ -19,9 +19,3 @@ function selectAnchorSetHref(selector, href) {
 		}
 	);
 };
-
-selectAnchorSetHref('#menuVideoBtn', './pages/speak.html')
-selectAnchorSetHref('#menuVocabularyBtn', './pages/glossary.html')
-selectAnchorSetHref('#menuWordcardBtn', './pages/wordcard.html')
-selectAnchorSetHref('#menuPracticeBtn', './pages/practice.html')
-

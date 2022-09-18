@@ -61,9 +61,43 @@ main {
 	grid-area: 2/2/3/-2;
 }
 
-footer {
-	grid-area: 3/1/4/4;
-	justify-self: end;
+a {
+	display: block;
+	text-align: center;
+	color: var(--main-color-light);
+	transition: all .3s ease-in-out;
+}
+
+.menuBtn:not(.footerBtn) {
+	border: 1px solid var(--main-color-border);
+	border-radius: 1rem;
+	box-shadow: var(--main-shadows);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.menuBtn:not(.footerBtn):hover,
+.menuBtn:not(.footerBtn):focus,
+.menuBtn:not(.footerBtn):active {
+	background-color: var(--main-color-dark);
+	color: var(--main-color-medium);
+}
+
+.footerBtn:hover,
+.footerBtn:focus
+.footerBtn:active {
+	color: var(--main-color-border);
+}
+
+main > a {
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+main > a > p {
+	font-size: 2rem;
 }
 
 footer > a {

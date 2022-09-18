@@ -1,0 +1,76 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+	grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+}
+
+#no1 {
+	grid-area: 2/2/3/3;
+}
+
+#no2 {
+	grid-area: 2/4/3/5;
+}
+
+#no3 {
+	grid-area: 4/2/5/3;
+}
+
+#no4 {
+	grid-area: 4/4/5/5;
+}
+
+#no5 {
+	grid-area: 6/2/6/3;
+}
+
+#no6 {
+	grid-area: 6/4/6/5;
+}
+
+main > a > p > span {
+	display: inline-block;
+	margin: 0;
+	transition: margin .3s ease-in-out;
+}
+
+main > a:hover > p > span {
+	margin: 0 1rem;
+}
+
+main > a.menuBtn > span {
+	position: absolute;
+	font-size: 10rem;
+	opacity: 0;
+}
+
+main > a.menuBtn > span.done {
+	opacity: .3;
+}
+
+footer {
+	grid-area: 3/1/4/4;
+	justify-self: center;
+}
+
+footer > a {
+	margin: 0 1rem;
+}
+
+footer > #menuForwardBtn {
+	opacity: 0;
+	cursor: default;
+}
+
+@media (max-width: 550px),
+(max-height: 550px) {
+	main > a > p {
+		font-size: 1.3rem;
+	}
+	main > a:hover > p > span {
+		margin: 0 .5rem;
+	}
+	main > a.menuBtn > span {
+		font-size: 7rem;
+	}
+}
