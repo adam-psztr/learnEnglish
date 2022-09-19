@@ -19,12 +19,12 @@ main {
 }
 
 main > a.menuBtn > span {
-	font-size: 7rem;
+	font-size: 4.5rem;
 }
 
 @media (max-width: 550px),
 (max-height: 550px) {
 	main > a.menuBtn > span {
-		font-size: 4rem;
+		font-size: 2rem;
 	}
 }

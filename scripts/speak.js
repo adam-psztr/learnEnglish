@@ -1,4 +1,4 @@
-let videoElement = document.querySelector("main > video");
+let videoElement = document.querySelector("main video");
 
 let locHash = window.location.hash.split("");
 locHash.shift();

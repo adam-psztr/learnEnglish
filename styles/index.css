@@ -99,4 +99,8 @@ footer {
 	#menuPracticeBtn {
 		grid-area: 4/4/5/6;
 	}
+
+	footer > a {
+		margin-top: -.5rem;
+	}
 }
