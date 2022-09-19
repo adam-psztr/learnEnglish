@@ -38,3 +38,4 @@ function saveData() {
 
 let progressBar = (data.length / 595 * 100).toFixed(2);
 selectElement("header .innerbar").style.width = progressBar + "%";
+
