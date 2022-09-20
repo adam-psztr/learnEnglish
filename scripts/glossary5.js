@@ -29,7 +29,7 @@ function addElement(i) {
 	newPar.innerHTML = (locHashNum * 45 + btnTextNum[i][0]) + " <span>-</span> " + (locHashNum * 45 + btnTextNum[i][1]);
 	menuBtn[i].appendChild(newPar);
 	let selector = '#no' + (1 + i);
-	let link = '../pages/speak.html#' + (locHashNum + i);
+	let link = '../pages/glossary.html#' + (locHashNum * 9 + i +1);
 	selectAnchorSetHref(selector, link)
 }
 

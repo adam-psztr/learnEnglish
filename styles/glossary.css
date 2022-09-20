@@ -1,0 +1,29 @@
+main {
+	grid-template-columns: 10px 1fr 10px;
+	grid-template-rows: 20px 1fr 20px;
+	overflow: hidden;
+}
+
+.content {
+	grid-area: 2/2/3/3;
+	overflow-y: scroll;
+}
+
+.content p {
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+	color: var(--main-color-light);
+	border-bottom: 1px solid var(--main-color-dark);
+	font-size: 1.3rem;
+}
+
+.content p:last-child {
+	border-bottom: none;
+}
+
+@media (max-width: 550px),
+(max-height: 550px) {
+  .content p {
+		font-size: 1.1rem;
+	}
+}
