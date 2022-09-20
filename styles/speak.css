@@ -10,6 +10,7 @@ main {
 }
 
 .vidContainer video {
+	box-shadow: var(--main-shadows);
 	border-radius: 1rem;
 	display: block;
 	margin: 0 auto;
