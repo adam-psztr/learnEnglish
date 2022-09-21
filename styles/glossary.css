@@ -21,6 +21,12 @@ main {
 	border-bottom: none;
 }
 
+.footerBtn:hover,
+.footerBtn:focus
+.footerBtn:active {
+	color: var(--main-color-border);
+}
+
 @media (max-width: 550px),
 (max-height: 550px) {
   .content p {

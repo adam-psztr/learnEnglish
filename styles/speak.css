@@ -1,6 +1,7 @@
 main {
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
+	overflow-y: scroll;
 }
 
 .vidContainer {
@@ -14,7 +15,7 @@ main {
 	border-radius: 1rem;
 	display: block;
 	margin: 0 auto;
-	width: 100%;
+	width: calc(100% - 24px);
 }
 
 .vidContainer p {
@@ -28,8 +29,8 @@ main {
 	color: var(--main-color-border);
 }
 
-@media (max-height: 550px) {
-	.vidContainer video {
-		height: 60vh;
-	}
+.vidContainer a:hover,
+.vidContainer a:focus
+.vidContainer a:active {
+	color: var(--main-color-border);
 }

@@ -70,6 +70,7 @@ a {
 	text-align: center;
 	color: var(--main-color-light);
 	transition: all .3s ease-in-out;
+	text-decoration: none;
 }
 
 .menuBtn:not(.footerBtn) {
@@ -96,7 +97,6 @@ a {
 }
 
 main > a {
-	text-decoration: none;
 	font-size: 2rem;
 }
 

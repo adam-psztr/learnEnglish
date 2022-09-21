@@ -714,7 +714,7 @@ let glossaries = [
 		"a planet - bolygó",
 		"a magazine - magazin",
 		"a magazine cover - címlap",
-		"it’s raining - esik az eső",
+		"it's raining - esik az eső",
 		"street - utca",
 		"to fall - esni",
 		"sky - ég",
@@ -1045,7 +1045,7 @@ let glossaries = [
 		"disease - betegség",
 		"to convince - meggyőz",
 		"to realize - észrevesz",
-		"I’m sorry - sajnálom",
+		"I'm sorry - sajnálom",
 		"to behave - viselkedik",
 		"badly - rosszul",
 		"to forgive - megbocsát",
@@ -1054,7 +1054,7 @@ let glossaries = [
 		"excuse me - elnézést kérek",
 		"sorry - bocsánat",
 		"to move - mozog",
-		"to get someone’s attention - valakinek a figyelmét felhívni",
+		"to get someone's attention - valakinek a figyelmét felhívni",
 		"to wave - int",
 		"a crowd - tömeg",
 		"to force - erőltet",
@@ -1268,7 +1268,7 @@ let glossaries = [
 		"sort - fajta",
 		"kitchen sink - konyhai mosogató",
 		"postman - postás",
-		"I’m sure - biztos vagyok benne",
+		"I'm sure - biztos vagyok benne",
 		"hang on! - várj!",
 		"hear (head) - hall",
 		"deliver (delivered) - kézbesít",
@@ -1360,7 +1360,7 @@ let glossaries = [
 		"sort - fajta",
 		"kitchen sink - konyhai mosogató",
 		"postman - postás",
-		"I’m sure - biztos vagyok benne",
+		"I'm sure - biztos vagyok benne",
 		"hang on! - várj!",
 		"hear (head) - hall",
 		"deliver (delivered) - kézbesít",
@@ -1410,13 +1410,13 @@ let glossaries = [
 		"well-done - teljesen átsült",
 		"write something down - wrote down - leír",
 		"a toast - pohárköszöntő",
-		"at someone’s health - iszik valaki egészségére",
+		"at someone's health - iszik valaki egészségére",
 		"clink glasses - koccint",
 		"topic - téma",
 		"topical - aktuális",
-		"This isn’t what I ordered - Nem ezt rendeltem.",
+		"This isn't what I ordered - Nem ezt rendeltem.",
 		"This food is cold. - Ez az étel hideg.",
-		"This food doesn’t taste fresh. - Ez az étel nem tűnik frissnek.",
+		"This food doesn't taste fresh. - Ez az étel nem tűnik frissnek.",
 		"This food is off. - Ez az étel romlott.",
 		"compensate - compensated - kárpótol",
 		"megfelelő",
@@ -1458,23 +1458,30 @@ let glossaries = [
 		"well-done - teljesen átsült",
 		"write something down - wrote down - leír",
 		"a toast - pohárköszöntő",
-		"at someone’s health - iszik valaki egészségére",
+		"at someone's health - iszik valaki egészségére",
 		"clink glasses - koccint",
 		"topic - téma",
 		"topical - aktuális",
-		"This isn’t what I ordered - Nem ezt rendeltem.",
+		"This isn't what I ordered - Nem ezt rendeltem.",
 		"This food is cold. - Ez az étel hideg.",
-		"This food doesn’t taste fresh. - Ez az étel nem tűnik frissnek.",
+		"This food doesn't taste fresh. - Ez az étel nem tűnik frissnek.",
 		"This food is off. - Ez az étel romlott.",
 		"compensate - compensated - kárpótol"
 	],
 ];
 
+let newPar = document.createElement("p");
+newPar.innerText = `${locHashNum*5-4}-${locHashNum*5}. lecke szavai:`;
+newPar.style.borderColor = "var(--main-color-border)";
+newPar.style.fontWeight = "500";
+content.appendChild(newPar);
+
 if(locHashNum==5 || locHashNum==17){
 	let newPar = document.createElement("p");
-	newPar.innerText = locHashNum==5 ? "1-4. lecke gyakorlása:" : "5-16. lecke gyakorlása:";
+	newPar.innerText = locHashNum==5 ? "1-20. lecke gyakorlása:" : "21-80. lecke gyakorlása:";
 	newPar.style.borderColor = "var(--main-color-border)";
-	newPar.style.fontWeight = "500";
+	newPar.style.borderBottomStyle = "dashed";
+	newPar.style.fontWeight = "300";
 	content.appendChild(newPar);
 }
 

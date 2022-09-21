@@ -1,4 +1,5 @@
 let videoElement = document.querySelector("main video");
+let videoContainerElement = document.querySelector("main .vidContainer");
 
 let locHash = window.location.hash.split("");
 locHash.shift();
@@ -39,3 +40,17 @@ videoElement.onloadeddata = () => {
 	}
 	saveData();
 };
+
+if(locHashNum%5==0 && locHashNum<91) {
+	let newPar = document.createElement("a");
+	newPar.innerText = "szószedet";
+	newPar.style.padding = "1rem";
+	newPar.style.fontWeight = "500";
+	newPar.style.letterSpacing = ".1rem";
+	newPar.style.position = "absolute";
+	newPar.style.left = "50%";
+	newPar.style.transform = "translate(-50%)";
+	newPar.setAttribute("href", "#");
+	videoContainerElement.appendChild(newPar);
+	selectAnchorSetHref("main .vidContainer a", ('../pages/glossary.html#' + (locHashNum / 5)))
+}
