@@ -12,7 +12,6 @@ main {
 	border-radius: 2rem;
 }
 
-
 .outerEqualization {
 	transition: all .5s ease-in-out;
 	position: absolute;
@@ -73,66 +72,12 @@ main {
 	color: var(--main-color-dark);
 }
 
-.content:hover .outerEqualization {
+.content.clicked .outerEqualization {
 	top: 70%;
 	left: 70%;
 }
 
-.content:hover .cardLangTwo p {
+.content.clicked .cardLangTwo p {
 	top: 56%;
 	left: 6%;
 }
-
-
-
-/* 
-.outerEqualization {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: calc(50% + 0%);
-	left: calc(50% + 0%);
-	top: 20px;
-	left: 20px;
-}
-
-
-.content:hover .outerEqualization {
-	top: 0%;
-	left: 0%;
-}
-.content:hover .cardLangTwo p {
-	top: 50%;
-	left: 50%;
-}
-
-}
- */
-
-
-/* 
-.content p {
-	padding-bottom: 3px;
-	margin-bottom: 10px;
-	color: var(--main-color-light);
-	border-bottom: 1px solid var(--main-color-dark);
-	font-size: 1.3rem;
-}
-
-.content p:last-child {
-	border-bottom: none;
-}
-
-.footerBtn:hover,
-.footerBtn:focus
-.footerBtn:active {
-	color: var(--main-color-border);
-}
-
-@media (max-width: 550px),
-(max-height: 550px) {
-  .content p {
-		font-size: 1.1rem;
-	}
-} */
-
