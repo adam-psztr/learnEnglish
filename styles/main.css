@@ -41,7 +41,15 @@ body {
 	background: var(--background-color);
 	display: grid;
 	grid-template-columns: minmax(3rem, auto) minmax(3rem, 960px) minmax(3rem, auto);
+}
+
+body.desktop {
 	grid-template-rows: 50px 1fr 50px;
+}
+
+body.mobile,
+body.tablet {
+	grid-template-rows: 60px 1fr 70px;
 }
 
 header {

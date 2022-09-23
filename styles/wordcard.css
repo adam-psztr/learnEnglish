@@ -53,8 +53,8 @@ main {
 	position: relative;
 	overflow: hidden;
 	background-color: var(--main-color-border);
-	width: 400%;
-	height: 400%;
+	width: 500%;
+	height: 500%;
 }
 
 .innerEqualization {
@@ -66,21 +66,21 @@ main {
 
 .cardLangTwo p {
 	position: absolute;
-	top: 42.5%;
-	left: -7.5%;
+	top: 44%;
+	left: -6%;
 	transform: translate(-50%,-50%);
 	transition: all .5s ease-in-out;
 	color: var(--main-color-dark);
 }
 
 .content:hover .outerEqualization {
-	top: 50%;
-	left: 50%;
+	top: 70%;
+	left: 70%;
 }
 
 .content:hover .cardLangTwo p {
-	top: 62.5%;
-	left: 12.5%;
+	top: 56%;
+	left: 6%;
 }
 
 

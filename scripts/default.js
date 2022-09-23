@@ -1,3 +1,14 @@
+const getDeviceType = () => {
+  const ua = window.navigator.userAgent;
+  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+    localStorage.setItem("deviceType","tablet");
+  } else if (/Mobile|iPhone|iPod|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+		localStorage.setItem("deviceType","mobile");
+  } else {
+		localStorage.setItem("deviceType","desktop");
+	}
+};
+
 function prevDef(event) {
 	event.preventDefault();
 };
@@ -28,7 +39,14 @@ if(!localStorage.getItem("played")){
 	localStorage.setItem("played","[]");
 };
 
+if(!localStorage.getItem("deviceType")){
+	getDeviceType();
+};
+
 let data = localStorage.getItem("played");
+let deviceType = localStorage.getItem("deviceType");
+
+selectElement("body").classList.add(deviceType);
 
 data = JSON.parse(data);
 
@@ -38,4 +56,3 @@ function saveData() {
 
 let progressBar = (data.length / 595 * 100).toFixed(2);
 selectElement("header .innerbar").style.width = progressBar + "%";
-
