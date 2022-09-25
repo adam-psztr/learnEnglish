@@ -1,7 +1,7 @@
 :root {
 	--background-color: linear-gradient(#33312E, #212121);
 	--main-color-border: #84C318;
-	--main-color-border: #53D8FB;
+	/* --main-color-border: #53D8FB;
 	--main-color-border: #FCAB10;
 	--main-color-border: #A288E3;
 	--main-color-border: #FF9FB2;
@@ -9,7 +9,7 @@
 	--main-color-border: #29E7CD;
 	--main-color-border: #FB3640;
 	--main-color-border: #F45866;
-	--main-color-border: #8DB1AB;
+	--main-color-border: #8DB1AB; */
 	--main-color-white: #fff;
 	--main-color-light: #87919E;
 	--main-color-medium: #8DA7BE;
@@ -36,6 +36,7 @@ html, body {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	overscroll-behavior-y: none;
 }
 
 html {
