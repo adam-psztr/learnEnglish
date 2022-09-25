@@ -1,23 +1,37 @@
 main {
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
-	grid-template-rows: 1fr 5fr 1fr 5fr 1fr;
+	grid-template-rows: .25fr .5fr .35fr 3fr .6fr 3fr .5fr;
+}
+
+h1 {
+	grid-area: 2/2/3/5;
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: .1rem;
+	text-align: center;
+	color: var(--main-color-light);
+}
+
+main h1 span {
+	text-shadow: var(--main-shadows);
+	transition: all .4s ease-in-out;
 }
 
 #menuVideoBtn {
-	grid-area: 2/2/3/3;
-}
-
-#menuVocabularyBtn {
-	grid-area: 2/4/3/5;
-}
-
-#menuWordcardBtn {
 	grid-area: 4/2/5/3;
 }
 
-#menuPracticeBtn {
+#menuVocabularyBtn {
 	grid-area: 4/4/5/5;
+}
+
+#menuWordcardBtn {
+	grid-area: 6/2/7/3;
+}
+
+#menuPracticeBtn {
+	grid-area: 6/4/7/5;
 }
 
 main > a > span.symbol {
@@ -33,7 +47,7 @@ main > a:active > span.symbol {
 	font-size: 3.5rem;
 }
 
-main > a:first-child > p:first-child {
+main > a:nth-child(2) > p:first-child {
 	position: relative;
 }
 
