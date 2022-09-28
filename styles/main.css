@@ -1,21 +1,31 @@
 :root {
 	--background-color: linear-gradient(#33312E, #212121);
-	--main-color-border: #84C318;
-	/* --main-color-border: #53D8FB;
-	--main-color-border: #FCAB10;
-	--main-color-border: #A288E3;
-	--main-color-border: #FF9FB2;
-	--main-color-border: #FAF33E;
-	--main-color-border: #29E7CD;
-	--main-color-border: #FB3640;
-	--main-color-border: #F45866;
-	--main-color-border: #8DB1AB; */
 	--main-color-white: #fff;
 	--main-color-light: #87919E;
 	--main-color-medium: #8DA7BE;
 	--main-color-dark: #36413E;
 	--main-color-black: #000;
 	--main-shadows: -4px -4px 8px rgba(255, 255, 255, .07), 4px 4px 8px rgba(0, 0, 0, .15);
+	--theme-bright-yellow-crayola-primary: #FCAB10;
+	--theme-bright-yellow-crayola-secondary: rgba(252, 171, 16, .1);
+	--theme-fiery-rose-primary: #f45866ff;
+	--theme-fiery-rose-secondary: rgba(244, 88, 102, .1);
+	--theme-lavender-floral-primary: #a288e3ff;
+	--theme-lavender-floral-secondary: rgba(162, 136, 227, .1);
+	--theme-lemon-yellow-primary: #faf33eff;
+	--theme-lemon-yellow-secondary: rgba(250, 243, 62, .1);
+	--theme-mauvelous-primary: #ff9fb2ff;
+	--theme-mauvelous-secondary: rgba(255, 159, 178, .1);
+	--theme-morning-blue-primary: #8db1abff;
+	--theme-morning-blue-secondary: rgba(141, 177, 171, .1);
+	--theme-red-salsa-primary: #fb3640ff;
+	--theme-red-salsa-secondary: rgba(251, 54, 64, .1);
+	--theme-sky-blue-crayola-primary: #53D8FB;
+	--theme-sky-blue-crayola-secondary: rgba(83, 216, 251, .1);
+	--theme-turquoise-primary: #29e7cdff;
+	--theme-turquoise-secondary: rgba(41, 231, 205, .1);
+	--theme-yellow-green-primary: #84C318;
+	--theme-yellow-green-secondary: rgba(132, 195, 24, .1);
 }
 
 * {
@@ -36,7 +46,7 @@ html, body {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	overscroll-behavior-y: none;
+	overscroll-behavior: none;
 }
 
 html {
@@ -92,7 +102,7 @@ a {
 }
 
 .menuBtn:not(.footerBtn) {
-	border: 1px solid var(--main-color-border);
+	border: 1px solid var(--theme-YellowGreen-primary);
 	border-radius: 1rem;
 	box-shadow: var(--main-shadows);
 	display: flex;
@@ -104,7 +114,7 @@ a {
 .menuBtn:not(.footerBtn):hover,
 .menuBtn:not(.footerBtn):focus,
 .menuBtn:not(.footerBtn):active {
-	background-color: var(--main-color-dark);
+	background-color: var(--theme-YellowGreen-secondary);
 	color: var(--main-color-medium);
 }
 
