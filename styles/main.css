@@ -26,6 +26,8 @@
 	--theme-turquoise-secondary: rgba(41, 231, 205, .1);
 	--theme-yellow-green-primary: #84C318;
 	--theme-yellow-green-secondary: rgba(132, 195, 24, .1);
+	--main-color-theme-primary: var(--theme-lemon-yellow-primary);
+	--main-color-theme-secondary: var(--theme-lemon-yellow-secondary);
 }
 
 * {
@@ -86,7 +88,7 @@ header {
 .innerbar {
 	width: 0;
 	height: 10px;
-	background-color: var(--main-color-border);
+	background-color: var(--main-color-theme-primary);
 }
 
 main {
@@ -102,7 +104,7 @@ a {
 }
 
 .menuBtn:not(.footerBtn) {
-	border: 1px solid var(--theme-yellow-green-primary);
+	border: 1px solid var(--main-color-theme-primary);
 	border-radius: 1rem;
 	box-shadow: var(--main-shadows);
 	display: flex;
@@ -114,14 +116,14 @@ a {
 .menuBtn:not(.footerBtn):hover,
 .menuBtn:not(.footerBtn):focus,
 .menuBtn:not(.footerBtn):active {
-	background-color: var(--theme-yellow-green-secondary);
+	background-color: var(--main-color-theme-secondary);
 	color: var(--main-color-medium);
 }
 
 .footerBtn:hover,
 .footerBtn:focus
 .footerBtn:active {
-	color: var(--main-color-border);
+	color: var(--main-color-theme-primary);
 }
 
 main > a {

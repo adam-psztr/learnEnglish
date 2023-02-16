@@ -24,7 +24,7 @@ main {
 .footerBtn:hover,
 .footerBtn:focus
 .footerBtn:active {
-	color: var(--main-color-border);
+	color: var(--main-color-theme-primary);
 }
 
 @media (max-width: 550px),

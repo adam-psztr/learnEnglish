@@ -2286,9 +2286,9 @@ selectElement(".clickArea").addEventListener('click', ()=>{
 	changeWords();
 })
 
-content.querySelector(".cardLangTwo").addEventListener('touchmove', ()=>{
-	changeWords();
-})
+// content.querySelector(".cardLangTwo").addEventListener('touchmove', ()=>{
+// 	changeWords();
+// })
 
 function changeWords() {
 	let randW = words[1][Math.floor(Math.random() * words[1].length)];

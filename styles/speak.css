@@ -26,11 +26,11 @@ main {
 }
 
 .vidContainer p.played {
-	color: var(--main-color-border);
+	color: var(--main-color-theme-primary);
 }
 
 .vidContainer a:hover,
 .vidContainer a:focus
 .vidContainer a:active {
-	color: var(--main-color-border);
+	color: var(--main-color-theme-primary);
 }
