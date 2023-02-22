@@ -1,0 +1,131 @@
+p {
+	font-weight: 500;
+	border-bottom: 1px solid var(--main-color-theme-primary);
+	color: var(--main-color-light);
+	text-align: left;
+}
+
+main > a {
+	font-size: 1.1rem;
+}
+
+main {
+	display: grid;
+	grid-template-rows: 25px 1.5rem 20px 2rem 20px 2rem 20px 2rem 20px 2rem 20px 2rem 20px 1.5rem 20px 2rem 20px 2rem 20px 2rem 20px 2rem 25px ;
+}
+
+#p01 {
+	grid-area: 2/1/3/6;
+}
+
+#no1 {
+	grid-area: 6/2/6/3;
+	border-color: var(--theme-bright-yellow-crayola-primary);
+}
+
+#no1:hover,
+#no1:active {
+background-color: var(--theme-bright-yellow-crayola-secondary);
+}
+
+#no2 {
+	grid-area: 12/4/13/5;
+	border-color: var(--theme-fiery-rose-primary);
+}
+
+#no2:hover,
+#no2:active {
+	background-color: var(--theme-fiery-rose-secondary);
+}
+
+#no3 {
+	grid-area: 8/2/9/3;
+	border-color: var(--theme-lavender-floral-primary);
+}
+
+#no3:hover,
+#no3:active {
+	background-color: var(--theme-lavender-floral-secondary);
+}
+
+#no4 {
+	grid-area: 4/2/5/3;
+	border-color: var(--theme-lemon-yellow-primary);
+}
+
+#no4:hover,
+#no4:active {
+	background-color: var(--theme-lemon-yellow-secondary);
+}
+
+#no5 {
+	grid-area: 8/4/9/5;
+	border-color: var(--theme-mauvelous-primary);
+}
+
+#no5:hover,
+#no5:active {
+	background-color: var(--theme-mauvelous-secondary);
+}
+
+#no6 {
+	grid-area: 6/4/7/5;
+	border-color: var(--theme-morning-blue-primary);
+}
+
+#no6:hover,
+#no6:active {
+	background-color: var(--theme-morning-blue-secondary);
+}
+
+#no7 {
+	grid-area: 10/2/11/3;
+	border-color: var(--theme-red-salsa-primary);
+}
+
+#no7:hover,
+#no7:active {
+	background-color: var(--theme-red-salsa-secondary);
+}
+
+#no8 {
+	grid-area: 4/4/5/5;
+	border-color: var(--theme-sky-blue-crayola-primary);
+}
+
+#no8:hover,
+#no8:active {
+	background-color: var(--theme-sky-blue-crayola-secondary);
+}
+
+#no9 {
+	grid-area: 12/2/13/3;
+	border-color: var(--theme-turquoise-primary);
+}
+
+#no9:hover,
+#no9:active {
+	background-color: var(--theme-turquoise-secondary);
+}
+
+#no10 {
+	grid-area: 10/4/11/5;
+	border-color: var(--theme-yellow-green-primary);
+}
+
+#no10:hover,
+#no10:active {
+	background-color: var(--theme-yellow-green-secondary);
+}
+
+#p02 {
+	grid-area: 14/1/15/6;
+}
+
+
+@media (max-width: 550px),
+(max-height: 550px) {
+	main > a {
+		font-size: .9rem;
+	}
+}

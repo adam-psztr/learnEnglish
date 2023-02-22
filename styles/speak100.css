@@ -35,7 +35,7 @@ main > a > p > span {
 }
 
 main > a:hover > p > span {
-	margin: 0 1rem;
+	margin: 0 .5rem;
 }
 
 main > a.menuBtn > span {

@@ -1472,14 +1472,14 @@ let glossaries = [
 
 let newPar = document.createElement("p");
 newPar.innerText = `${locHashNum*5-4}-${locHashNum*5}. lecke szavai:`;
-newPar.style.borderColor = "var(--main-color-border)";
+newPar.style.borderColor = "var(--main-color-theme-primary)";
 newPar.style.fontWeight = "500";
 content.appendChild(newPar);
 
 if(locHashNum==5 || locHashNum==17){
 	let newPar = document.createElement("p");
 	newPar.innerText = locHashNum==5 ? "1-20. lecke gyakorlása:" : "21-80. lecke gyakorlása:";
-	newPar.style.borderColor = "var(--main-color-border)";
+	newPar.style.borderColor = "var(--main-color-theme-primary)";
 	newPar.style.borderBottomStyle = "dashed";
 	newPar.style.fontWeight = "300";
 	content.appendChild(newPar);

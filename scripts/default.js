@@ -33,6 +33,12 @@ function selectAnchorSetHref(selector, href) {
 	);
 };
 
+if(localStorage.getItem("mainStyle")){
+	let color = localStorage.getItem("mainStyle");
+	document.documentElement.style.setProperty('--main-color-theme-primary', `var(--theme-${color}-primary`);
+	document.documentElement.style.setProperty('--main-color-theme-secondary', `var(--theme-${color}-secondary`);
+};
+
 let menuBtn = document.querySelectorAll("main .menuBtn")
 
 if(!localStorage.getItem("played")){

@@ -26,8 +26,8 @@
 	--theme-turquoise-secondary: rgba(41, 231, 205, .1);
 	--theme-yellow-green-primary: #84C318;
 	--theme-yellow-green-secondary: rgba(132, 195, 24, .1);
-	--main-color-theme-primary: var(--theme-lemon-yellow-primary);
-	--main-color-theme-secondary: var(--theme-lemon-yellow-secondary);
+	--main-color-theme-primary: var(--theme-yellow-green-primary);
+	--main-color-theme-secondary: var(--theme-yellow-green-secondary);
 }
 
 * {
