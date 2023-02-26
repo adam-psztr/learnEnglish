@@ -3968,14 +3968,14 @@ let words = [
 selectAnchorSetHref('#menuBackBtn', '../index.html')
 selectAnchorSetHref('#menuHomeBtn', '../index.html')
 
-document.querySelector('#menuForwardBtn').addEventListener('click', (e) => {
-	prevDef(e);
-	// if(locHashNum<5){
-	// 	window.location.href = '../pages/speak10.html#' + (locHashNum + 1);
-	// 	location.reload();
-	// 	}
-	}
-)
+// document.querySelector('#menuForwardBtn').addEventListener('click', (e) => {
+// 	prevDef(e);
+// 	// if(locHashNum<5){
+// 	// 	window.location.href = '../pages/speak10.html#' + (locHashNum + 1);
+// 	// 	location.reload();
+// 	// 	}
+// 	}
+// )
 
 let content = selectElement(".content");
 
@@ -3983,15 +3983,36 @@ content.addEventListener('click', ()=>{
 	content.classList.toggle("clicked");
 })
 
-selectElement(".clickArea").addEventListener('click', ()=>{
-	changeWords();
+selectElement(".clickArea").addEventListener('click', (e)=>{
+	prevDef(e);
+	content.classList.remove("clicked");
+	setTimeout(() => {
+		changeWords();
+	}, 300);
 })
-selectElement("#menuForwardBtn").addEventListener('click', ()=>{
-	changeWords();
+selectElement("#menuForwardBtn").addEventListener('click', (e)=>{
+	prevDef(e);
+	content.classList.remove("clicked");
+	setTimeout(() => {
+		changeWords();
+	}, 300);
 })
 
-// content.querySelector(".cardLangTwo").addEventListener('touchmove', ()=>{
-// 	changeWords();
+let touchStartPoint, touchEndPoint;
+
+content.querySelector(".cardLangOne").addEventListener('touchstart', (e) => {touchStartPoint = e.pageX})
+
+content.querySelector(".cardLangOne").addEventListener('touchend', (e) => {touchEndPoint = e.pageX;
+	if (touchStartPoint>touchEndPoint && touchStartPoint - touchEndPoint > 25) {
+		prevDef(e);
+		content.classList.remove("clicked");
+		setTimeout(() => {
+			changeWords();
+		}, 300);
+};})
+
+// document.querySelector("main").addEventListener('touchstart', ()=>{
+// 	checkScrollPosition(this);
 // })
 
 function changeWords() {
@@ -4003,20 +4024,20 @@ function changeWords() {
 // content.querySelector(".cardLangTwo #next").addEventListener('dblclick', ()=>{
 // 		content.querySelector(".cardLangTwo").style.backgroundColor = "yellow";
 // 	})
-	// checkScrollPosition()
+// 	checkScrollPosition()
 // })
 
 // function checkScrollPosition(e) {
-// 	console.log(e);
-// 	const touchstart = e.originalEvent.touches[0].clientY;
-// 	const touchend = e.originalEvent.changedTouches[0].clientY;
+// 	// console.log(e.pageX);
+// 	// const touchstart = e.originalEvent.touches[0].clientY;
+// 	// const touchend = e.originalEvent.changedTouches[0].clientY;
 
-// 	const button = content.querySelector(".cardLangTwo");
-// 	if (touchstart > touchend) {
-// 			button.style.background = "green";
-// 	} else {
-// 			button.style.background = "blue";
-// 	}
+// 	// const button = content.querySelector(".cardLangTwo");
+// 	// if (touchstart > touchend) {
+// 	// 		button.style.background = "green";
+// 	// } else {
+// 	// 		button.style.background = "blue";
+// 	// }
 // }
 
 changeWords();
