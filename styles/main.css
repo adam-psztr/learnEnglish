@@ -62,7 +62,7 @@ body {
 	min-height: 100%;
 	background: var(--background-color);
 	display: grid;
-	grid-template-columns: minmax(3rem, auto) minmax(3rem, 960px) minmax(3rem, auto);
+	grid-template-columns: minmax(2rem, auto) minmax(3rem, 960px) minmax(2rem, auto);
 }
 
 body.desktop {

@@ -11,7 +11,8 @@ main > a {
 
 main {
 	display: grid;
-	grid-template-rows: 25px 1.5rem 20px 2rem 20px 2rem 20px 2rem 20px 2rem 20px 2rem 20px 1.5rem 20px 2rem 20px 2rem 20px 2rem 20px 2rem 25px ;
+	grid-template-columns: 1fr 5fr 15px 5fr 1fr;
+	grid-template-rows: 15px 1.5rem 15px 2rem 15px 2rem 15px 2rem 15px 2rem 15px 2rem 20px 1.5rem 15px 2rem 15px 2rem 15px 2rem 15px 2rem 15px 2rem 20px 1.5rem 15px 2rem 15px ;
 }
 
 #p01 {
@@ -122,6 +123,70 @@ background-color: var(--theme-bright-yellow-crayola-secondary);
 	grid-area: 14/1/15/6;
 }
 
+#no11 {
+	grid-area: 16/2/17/3;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no12 {
+	grid-area: 16/4/17/5;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no13 {
+	grid-area: 18/2/19/3;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no14 {
+	grid-area: 18/4/19/5;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no15 {
+	grid-area: 20/2/21/3;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no16 {
+	grid-area: 20/4/21/5;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no17 {
+	grid-area: 22/2/23/3;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no18 {
+	grid-area: 22/4/23/5;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no19 {
+	grid-area: 24/2/25/3;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no20 {
+	grid-area: 24/4/25/5;
+	border-color: var(--main-color-theme-primary);
+}
+
+#p03 {
+	grid-area: 26/1/27/6;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no21 {
+	grid-area: 28/2/29/3;
+	border-color: var(--main-color-theme-primary);
+}
+
+#no22 {
+	grid-area: 28/4/29/5;
+	border-color: var(--main-color-theme-primary);
+}
 
 @media (max-width: 550px),
 (max-height: 550px) {
