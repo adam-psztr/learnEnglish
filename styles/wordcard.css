@@ -43,6 +43,7 @@ main {
 	font-weight: 500;
 	font-size: 2rem;
 	text-align: center;
+	width: 75vw;
 	/* white-space: nowrap; */
 }
 
@@ -70,7 +71,7 @@ main {
 	transform: translate(-50%,-50%);
 	transition: all .5s ease-in-out;
 	color: var(--main-color-dark);
-	width: 400px;
+	width: 75vw;
 	text-align: center;
 }
 
@@ -86,9 +87,9 @@ main {
 
 .clickArea {
 	border-radius: 5rem;
-	width: 60vw;
+	width: 70vw;
 	height: 20vh;
 	position: absolute;
 	top: 40vh;
-	left: 20vw;
+	left: 15vw;
 }

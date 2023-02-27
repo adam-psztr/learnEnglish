@@ -3979,7 +3979,7 @@ selectAnchorSetHref('#menuHomeBtn', '../index.html')
 
 let content = selectElement(".content");
 
-content.addEventListener('click', ()=>{
+content.querySelector(".cardLangTwo").addEventListener('click', ()=>{
 	content.classList.toggle("clicked");
 })
 
@@ -4000,9 +4000,9 @@ selectElement("#menuForwardBtn").addEventListener('click', (e)=>{
 
 let touchStartPoint, touchEndPoint;
 
-content.querySelector(".cardLangOne").addEventListener('touchstart', (e) => {touchStartPoint = e.pageX})
+content.addEventListener('touchstart', (e) => {touchStartPoint = e.pageX})
 
-content.querySelector(".cardLangOne").addEventListener('touchend', (e) => {touchEndPoint = e.pageX;
+content.addEventListener('touchend', (e) => {touchEndPoint = e.pageX;
 	if (touchStartPoint>touchEndPoint && touchStartPoint - touchEndPoint > 25) {
 		prevDef(e);
 		content.classList.remove("clicked");
