@@ -4017,8 +4017,14 @@ content.addEventListener('touchend', (e) => {touchEndPoint = e.pageX;
 
 function changeWords() {
 	let randW = words[1][Math.floor(Math.random() * words[1].length)];
-	selectElement("#langOne").innerText = randW.hu;
-	selectElement("#langTwo").innerText = randW.en;
+	if(language == "hun") {
+		selectElement("#langOne").innerText = randW.hu;
+		selectElement("#langTwo").innerText = randW.en;
+	};
+	if(language == "eng") {
+		selectElement("#langOne").innerText = randW.en;
+		selectElement("#langTwo").innerText = randW.hu;
+	};
 }
 
 // content.querySelector(".cardLangTwo #next").addEventListener('dblclick', ()=>{

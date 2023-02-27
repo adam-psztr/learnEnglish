@@ -39,6 +39,8 @@ if(localStorage.getItem("mainStyle")){
 	document.documentElement.style.setProperty('--main-color-theme-secondary', `var(--theme-${color}-secondary`);
 };
 
+let language = localStorage.getItem("mainLang") || "hun";
+
 let menuBtn = document.querySelectorAll("main .menuBtn")
 
 if(!localStorage.getItem("played")){
